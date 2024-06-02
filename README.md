@@ -1,6 +1,8 @@
-# Welcome to Remix + Vite!
+# Welcome to Remix + Telefunc!
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
+📖 See the docs for details on supported features.
+* [Remix docs](https://remix.run/docs)
+* [Telefunc](https://telefunc.com/)
 
 ## Development
 
@@ -10,7 +12,7 @@ Run the Vite dev server:
 npm run dev
 ```
 
-## Deployment
+## Production
 
 First, build your app for production:
 
@@ -24,13 +26,12 @@ Then run the app in production mode:
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+> as of telefunc@0.1.73 prod start requires workaround instead of using conventional `index.js` entry:
 
-### DIY
+```json
+"start": "remix-serve ./build/server/index2.js",
+```
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+## Feature requests
 
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+See [IDEAS.md](./IDEAS.md)
