@@ -1,5 +1,11 @@
 node_modules
 
+# yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
 /.cache
 /build
 .env
